@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+  <div id="div-style">
+       <div>
+        <h1>Temperature <br>Converter</h1>
+      </div>
+      <span>
+        <span>Select Your Temperature Unit</span>
+        <select class="input-style" id="unit" name="temp_diff" >
+            <option value="cel">&#176;Celsius</option>
+            <option value="fah">&#176;Fahrenheit</option>
+        </select>
+      </span><br><br>
+      <span>
+        <label for="Value">Enter a value:</label>
+        <input type="number" id="Value" class="input-style" placeholder="Enter Your Value">
+      </span>
+      <button id="btn" onclick="calculateTemp()">Calculate</button><br><br>
+      
+    <div id="result-style">
+          <p style="display: inline;" id="inner-result">Result: </p>
+          <div id="result" style="display: inline;" id="inner-result"></div>
+    </div>
+
+  </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
